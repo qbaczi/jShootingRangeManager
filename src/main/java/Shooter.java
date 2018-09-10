@@ -7,7 +7,7 @@ public class Shooter {
     private int age;
     private String idNumber;
 
-    LinkedList<Shooter> shooters = new LinkedList<Shooter>();
+
 
     public Shooter(String name, String surename, int age, String idNumber) {
         this.name = name;
@@ -15,5 +15,7 @@ public class Shooter {
         this.age = age;
         this.idNumber = idNumber;
     }
+
+
 
 }
