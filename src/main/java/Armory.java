@@ -6,7 +6,5 @@ public class Armory {
     Armory armory = new Armory();
     Weapon weapon = new Weapon("AK-47", 7.62, "BK234545", 30, true);
 
-
-
 }
 

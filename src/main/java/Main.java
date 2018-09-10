@@ -11,6 +11,10 @@ public class Main {
         shooters.add(shooter);
         shooters.add(shooter);
         printList(shooters);
+
+        Armory armory = new Armory();
+        armory.weaponLinkedList.add(Weapon.addWeapon());
+
     }
 
     private static void printList (LinkedList<Shooter> shooterLinkedList){

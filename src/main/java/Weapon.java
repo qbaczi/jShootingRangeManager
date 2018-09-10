@@ -6,9 +6,7 @@ public class Weapon {
     private int magCapacity;
     private boolean inArmory = true;
 
-    public Weapon(){
 
-    }
 
     public Weapon(String nameOfWeapon, double caliber, String serialNumber, int magCapacity, boolean inArmory) {
         this.nameOfWeapon = nameOfWeapon;
@@ -17,6 +15,7 @@ public class Weapon {
         this.magCapacity = magCapacity;
         this.inArmory = inArmory;
     }
+
 
     public String getNameOfWeapon() {
         return nameOfWeapon;
