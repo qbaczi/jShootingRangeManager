@@ -6,4 +6,4 @@ Checking the status of each weapon and the amount of ammunition.
 
 Ultimately, it will be transferred to JavyFx.
 
-**Created by Jakub Maciejewski**
+**Created by Jakub Maciejewski 2018**
