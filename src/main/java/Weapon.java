@@ -56,4 +56,15 @@ public class Weapon {
     public void setInArmory(boolean inArmory) {
         this.inArmory = inArmory;
     }
+
+    @Override
+    public String toString() {
+        return "Weapon{" +
+                "nameOfWeapon='" + nameOfWeapon + '\'' +
+                ", caliber=" + caliber +
+                ", serialNumber='" + serialNumber + '\'' +
+                ", magCapacity=" + magCapacity +
+                ", inArmory=" + inArmory +
+                '}';
+    }
 }

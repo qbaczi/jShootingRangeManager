@@ -1,4 +1,5 @@
 import java.util.LinkedList;
+import java.util.Scanner;
 
 public class Shooter {
 
@@ -6,7 +7,6 @@ public class Shooter {
     private String surename;
     private int age;
     private String idNumber;
-
 
 
     public Shooter(String name, String surename, int age, String idNumber) {
@@ -46,5 +46,15 @@ public class Shooter {
 
     public void setIdNumber(String idNumber) {
         this.idNumber = idNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "Shooter{" +
+                "name='" + name + '\'' +
+                ", surename='" + surename + '\'' +
+                ", age=" + age +
+                ", idNumber='" + idNumber + '\'' +
+                '}';
     }
 }
