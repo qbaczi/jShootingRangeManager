@@ -13,7 +13,7 @@ public class MainMenu {
         System.out.println();
         System.out.println("===========================================================================");
         System.out.println("Wybierz menu");
-        System.out.println("1. Lista strzelców");
+        System.out.println("1. Strzelcy");
         System.out.println("2. Magazyn broni i amunicji");
         System.out.println("3. Zapotrzebowanie na strzelanie");
         System.out.println("4. Strzelanie");

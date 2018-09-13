@@ -9,6 +9,7 @@ public class ShooterManager {
 
         System.out.println("Proszę podaj imię");
         String name = sc.nextLine();
+        sc.nextLine();
 
         System.out.println("Proszę podaj nazwisko");
         String surname = sc.nextLine();
