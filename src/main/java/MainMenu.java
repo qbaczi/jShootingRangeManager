@@ -6,8 +6,6 @@ public class MainMenu {
     private Scanner sc = new Scanner(System.in);
     private ShooterManager shooterManager = new ShooterManager();
     private Armory armory = new Armory();
-//    private OrderManager orderManager = new OrderManager();
-//    private BookCollectionMenu bookCollectionMenu = new BookCollectionMenu(sc, bookCollection);
 
     public void showMenu() {
         System.out.println();
@@ -22,18 +20,13 @@ public class MainMenu {
         switch (sc.nextInt()) {
             case 1:
                 shooterManager.showMenuOfShooter();
-
                 break;
             case 2:
                 armory.showWeaponsFromArmory();
                 break;
             case 3:
-//                BookCurrentOrdersMenu bookCurrentOrdersMenu = new BookCurrentOrdersMenu(sc, orderManager);
-//                bookCurrentOrdersMenu.showMenu();
                 break;
             case 4:
-//                BookNewOrderMenu bookNewOrderMenu = new BookNewOrderMenu(sc, bookCollectionMenu, orderManager);
-//                bookNewOrderMenu.showMenu();
                 break;
             case 5:
                 System.exit(0);
