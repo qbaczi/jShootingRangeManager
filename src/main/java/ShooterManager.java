@@ -6,7 +6,6 @@ public class ShooterManager {
 
     public static Shooter createShooter(Scanner sc) {
 
-
         System.out.println("Proszę podaj imię");
         String name = sc.nextLine();
         sc.nextLine();
@@ -25,7 +24,7 @@ public class ShooterManager {
 
     }
 
-    public void showMenuOfShooter() {
+    public void showMenuOfShooter() {//tutaj showMenuOfShooter(MainMenu mainMenu)
         System.out.println();
         System.out.println("===========================================================================");
         System.out.println("Wybierz menu");
@@ -41,7 +40,7 @@ public class ShooterManager {
                 createShooter(sc);
                 break;
             case 3:
-                MainMenu mainMenu = new MainMenu();
+                MainMenu mainMenu = new MainMenu();//nie tworz nowego obiektu menu, masz go juz utworzonego, przekaz go w parametrze i uzyj :)
                 mainMenu.showMenu();
                 break;
             default:

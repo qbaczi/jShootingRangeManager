@@ -15,11 +15,12 @@ public class MainMenu {
         System.out.println("2. Magazyn broni i amunicji");
         System.out.println("3. Zapotrzebowanie na strzelanie");
         System.out.println("4. Strzelanie");
-        System.out.println("5. Zakończ");
+        System.out.println("5. Zakończ");//jezeli elementy w menu sie nie beda zmieniac, uzyj enuma :)
 
         switch (sc.nextInt()) {
             case 1:
-                shooterManager.showMenuOfShooter();
+                shooterManager.showMenuOfShooter();//tutaj mamy swietna okazje do uzycia strategii!
+                //tutaj przekaz swoj obiekt menu, przypominam slowo THIS! cos takiego shooterManager.showMenuOfShooter(this);
                 break;
             case 2:
                 armory.showWeaponsFromArmory();

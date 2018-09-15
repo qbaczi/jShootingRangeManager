@@ -9,16 +9,16 @@ public class Shooter {
     private String idNumber;
 
 
-    public Shooter(String name, String surename, int age, String idNumber) {
+    public Shooter(String name, String surname, int age, String idNumber) {
         this.name = name;
-        this.surename = surename;
+        this.surename = surname;
         this.age = age;
         this.idNumber = idNumber;
     }
 
     public String getName() {
         return name;
-    }
+    }//polecam poczytac o narzedzi LOMBOK ktory sam pisze dla nas getery i setery :)
 
     public void setName(String name) {
         this.name = name;
