@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Ammo {
     private double caliber;
@@ -11,7 +12,7 @@ public class Ammo {
 
     //LinkedList<Ammo> ammoList = new LinkedList();//Linked lista nie koniecznie jest najlepszym wyborem poczytaj o plusach i minusach
 
-   public ArrayList<Ammo> ammoList = new ArrayList(){{
+   public List<Ammo> ammoList = new ArrayList(){{
        add(new Ammo(7.62, 100000));//kalibry amunicji trzymałbym w enumie, ponieważ jest ich skończona ilosć rodzajów
        add(new Ammo(5.56, 100000));
        add(new Ammo(12.7, 100000));
@@ -21,8 +22,7 @@ public class Ammo {
    }};
 
 
-
-   public void showAmmoWarehouse(){
+    public void showAmmoWarehouse(){
        for (Ammo ammo : ammoList) {
            System.out.println(ammo.toString());
        }
