@@ -1,9 +1,11 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Armory {
-
+    private Scanner sc = new Scanner(System.in);
     private List<Weapon> weaponArrayList = new ArrayList<Weapon>();//znowu linked lista, mysle ze korzystniej byloby uzyc ArrayListy (List<>)
+    private Ammo ammo = new Ammo();
 
     public void addWeapons() {
         weaponArrayList.add(new Weapon(GunType.AK47, 7.62, "BK234545", 30, true));//rodzje broni do enuma bo sie powtarzaja, tylko dodawac
@@ -19,6 +21,31 @@ public class Armory {
         weaponArrayList.add(new Weapon(GunType.HKG3, 7.62, "GG67433", 20, true));
         weaponArrayList.add(new Weapon(GunType.DESERTEAGLE, 0.44, "DD34298", 8, true));
         weaponArrayList.add(new Weapon(GunType.MOSSBERG500, 12, "BK234545", 8, true));
+
+    }
+    public void showMenuOfArmory(MainMenu mainMenu){
+        System.out.println("Wybierz menu");
+        System.out.println("1: Magazyn broni");
+        System.out.println("2: Magazyn aminicji");
+        System.out.println("3: Wstecz");
+
+        switch (sc.nextInt()) {
+
+            case 1:
+                showWeaponsFromArmory();
+                showMenuOfArmory(mainMenu);
+                break;
+            case 2:
+                ammo.showAmmoWarehouse();
+                showMenuOfArmory(mainMenu);
+                break;
+            case 3:
+                mainMenu.showMenu();
+                break;
+            default:
+                System.out.println("Wybrałeś niewspieraną opcje");
+
+        }
 
     }
 

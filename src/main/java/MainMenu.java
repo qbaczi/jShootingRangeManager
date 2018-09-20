@@ -7,6 +7,8 @@ public class MainMenu {
     private ShooterManager shooterManager = new ShooterManager();
     private Armory armory = new Armory();
 
+
+
     public void showMenu() {
         System.out.println();
         System.out.println("===========================================================================");
@@ -23,7 +25,7 @@ public class MainMenu {
                 //tutaj przekaz swoj obiekt menu, przypominam slowo THIS! cos takiego shooterManager.showMenuOfShooter(this);
                 break;
             case 2:
-                armory.showWeaponsFromArmory();
+                armory.showMenuOfArmory(this);
                 break;
             case 3:
                 break;
