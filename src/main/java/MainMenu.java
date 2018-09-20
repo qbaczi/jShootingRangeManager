@@ -19,7 +19,7 @@ public class MainMenu {
 
         switch (sc.nextInt()) {
             case 1:
-                shooterManager.showMenuOfShooter();//tutaj mamy swietna okazje do uzycia strategii!
+                shooterManager.showMenuOfShooter(this);//tutaj mamy swietna okazje do uzycia strategii!
                 //tutaj przekaz swoj obiekt menu, przypominam slowo THIS! cos takiego shooterManager.showMenuOfShooter(this);
                 break;
             case 2:

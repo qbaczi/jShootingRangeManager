@@ -19,4 +19,14 @@ public class Shooter {
     protected boolean canEqual(Object other) {
         return other instanceof Shooter;
     }
+
+    @Override
+    public String toString() {
+        return "Shooter{" +
+                "name='" + name + '\'' +
+                ", surename='" + surename + '\'' +
+                ", age=" + age +
+                ", idNumber='" + idNumber + '\'' +
+                '}';
+    }
 }
