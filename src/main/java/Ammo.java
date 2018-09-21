@@ -35,6 +35,7 @@ public class Ammo {
 
    }
 
+
     @Override
     public String toString() {//swietne przeciazenie metody toString
         return "Ammo{" + "caliber=" + caliber + ", " + "quantityOfAmmo=" + quantityOfAmmo + '}';

@@ -6,6 +6,7 @@ public class Armory {
     private Scanner sc = new Scanner(System.in);
     private List<Weapon> weaponArrayList = new ArrayList<Weapon>();//znowu linked lista, mysle ze korzystniej byloby uzyc ArrayListy (List<>)
     private Ammo ammo = new Ammo();
+    Weapon choosenWepon = null;
 
     public void addWeapons() {
         weaponArrayList.add(new Weapon(GunType.AK47, 7.62, "BK234545", 30, true));//rodzje broni do enuma bo sie powtarzaja, tylko dodawac
@@ -49,6 +50,19 @@ public class Armory {
 
     }
 
+    public Weapon chooseAWeapon() {
+        String cWep = sc.nextLine();
+        for (int i = 0; i < weaponArrayList.size(); i++) {
+
+            if (weaponArrayList.get(i).getSerialNumber().equals(cWep)) {
+                choosenWepon = weaponArrayList.get(i);
+                System.out.println("Broń wybrana!" + weaponArrayList.get(i).getGunType());
+                weaponArrayList.get(i).setInArmory(false);
+
+            }
+        }
+        return choosenWepon;
+    }
     public void showWeaponsFromArmory() {
         addWeapons();
         for (int i = 0; i < weaponArrayList.size(); i++) {

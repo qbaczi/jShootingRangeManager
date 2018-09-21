@@ -1,11 +1,15 @@
+import lombok.Data;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
+@Data
 public class ShooterManager {
 
+
     private Scanner sc = new Scanner(System.in);
-    private List<Shooter> shooterList = new ArrayList<Shooter>();
+    public List<Shooter> shooterList = new ArrayList<Shooter>();
+    Shooter choosen = null;
 
     public static Shooter createShooter(Scanner sc) {
 
@@ -80,4 +84,18 @@ public class ShooterManager {
             }
         }
     }
+    public Shooter chooseAShooter(){
+
+        for (int i = 0; i < shooterList.size(); i++) {
+            if (sc.nextLine().equals(shooterList.get(i).getIdNumber())){
+                choosen = shooterList.get(i);
+                System.out.println("Strzelec wybrany!");
+            }else {
+                System.out.println("Wybierz jeszcze raz");
+                chooseAShooter();
+            }
+        }
+        return choosen;
+    }
+
 }

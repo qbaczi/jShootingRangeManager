@@ -6,6 +6,8 @@ public class MainMenu {
     private Scanner sc = new Scanner(System.in);
     private ShooterManager shooterManager = new ShooterManager();
     private Armory armory = new Armory();
+    private TakeAmmoAndWeapon takeAmmoAndWeapon = new TakeAmmoAndWeapon();
+    private Shooting shooting = new Shooting();
 
 
 
@@ -28,8 +30,10 @@ public class MainMenu {
                 armory.showMenuOfArmory(this);
                 break;
             case 3:
+                takeAmmoAndWeapon.showMenu(this);
                 break;
             case 4:
+                shooting.shooting();
                 break;
             case 5:
                 System.exit(0);
